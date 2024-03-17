@@ -34,3 +34,13 @@ F:\FuzeAPI\FuzeAPI\FuzeAPI\obj\Debug\net6.0\refint\FuzeAPI.dll
 F:\FuzeAPI\FuzeAPI\FuzeAPI\obj\Debug\net6.0\FuzeAPI.pdb
 F:\FuzeAPI\FuzeAPI\FuzeAPI\obj\Debug\net6.0\FuzeAPI.genruntimeconfig.cache
 F:\FuzeAPI\FuzeAPI\FuzeAPI\obj\Debug\net6.0\ref\FuzeAPI.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Fractions.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\IdentityModel.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\IdentityModel.OidcClient.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\KubernetesClient.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\YamlDotNet.dll
