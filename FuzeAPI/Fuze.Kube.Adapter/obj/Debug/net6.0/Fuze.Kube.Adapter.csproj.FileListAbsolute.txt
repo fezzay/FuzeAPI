@@ -1,0 +1,15 @@
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\bin\Debug\net6.0\Fuze.Kube.Adapter.deps.json
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\bin\Debug\net6.0\Fuze.Kube.Adapter.dll
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\bin\Debug\net6.0\Fuze.Kube.Adapter.pdb
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\bin\Debug\net6.0\Fuze.Domain.dll
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\bin\Debug\net6.0\Fuze.Domain.pdb
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.csproj.AssemblyReference.cache
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.GeneratedMSBuildEditorConfig.editorconfig
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.AssemblyInfoInputs.cache
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.AssemblyInfo.cs
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.csproj.CoreCompileInputs.cache
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.csproj.CopyComplete
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.dll
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\refint\Fuze.Kube.Adapter.dll
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\Fuze.Kube.Adapter.pdb
+F:\FuzeAPI\FuzeAPI\Fuze.Kube.Adapter\obj\Debug\net6.0\ref\Fuze.Kube.Adapter.dll

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Fuze.Kube.Adapter/1.0.0": {
+        "dependencies": {
+          "Fuze.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Fuze.Kube.Adapter.dll": {}
+        }
+      },
+      "Fuze.Domain/1.0.0": {
+        "runtime": {
+          "Fuze.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fuze.Kube.Adapter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fuze.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

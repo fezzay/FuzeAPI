@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Fuze.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Fuze.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Fuze.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fuze.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Fuze.Domain/Fuze.Domain.csproj",
+      "msbuildProject": "../Fuze.Domain/Fuze.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Fuze.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\thoma\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\FuzeAPI\\FuzeAPI\\Fuze.Kube.Adapter\\Fuze.Kube.Adapter.csproj",
+      "projectName": "Fuze.Kube.Adapter",
+      "projectPath": "F:\\FuzeAPI\\FuzeAPI\\Fuze.Kube.Adapter\\Fuze.Kube.Adapter.csproj",
+      "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+      "outputPath": "F:\\FuzeAPI\\FuzeAPI\\Fuze.Kube.Adapter\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "F:\\FuzeAPI\\FuzeAPI\\Fuze.Domain\\Fuze.Domain.csproj": {
+              "projectPath": "F:\\FuzeAPI\\FuzeAPI\\Fuze.Domain\\Fuze.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

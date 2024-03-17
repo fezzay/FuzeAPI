@@ -1,0 +1,11 @@
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\bin\Debug\net6.0\Fuze.Domain.deps.json
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\bin\Debug\net6.0\Fuze.Domain.dll
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\bin\Debug\net6.0\Fuze.Domain.pdb
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\Fuze.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\Fuze.Domain.AssemblyInfoInputs.cache
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\Fuze.Domain.AssemblyInfo.cs
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\Fuze.Domain.csproj.CoreCompileInputs.cache
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\Fuze.Domain.dll
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\refint\Fuze.Domain.dll
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\Fuze.Domain.pdb
+F:\FuzeAPI\FuzeAPI\Fuze.Domain\obj\Debug\net6.0\ref\Fuze.Domain.dll
