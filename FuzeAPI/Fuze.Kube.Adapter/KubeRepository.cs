@@ -1,6 +1,5 @@
 ﻿using Fuze.Domain.Interfaces;
 using FuzeAPI.Models;
-using System;
 
 namespace Fuze.Kube.Adapter
 {
