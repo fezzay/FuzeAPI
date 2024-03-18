@@ -27,11 +27,5 @@ namespace FuzeAPI.Controllers
         {
             return _kubernetesService.GetAllPods();
         }
-
-        [HttpGet(Name = "GetHelloWorld")]
-        public string GetHello()
-        {
-            return "Hello";
-        }
     }
 }
