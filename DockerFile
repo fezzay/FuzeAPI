@@ -1,13 +1,13 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0-focal AS build
-WORKDIR /source
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
 COPY . .
 RUN dotnet restore "./FuzeAPI/FuzeAPI/FuzeAPI.csproj" --disable-parallel
-RUN dotnet publish "./FuzeAPI/FuzeAPI/FuzeAPI.csproj" -c release -o /app --no-restore
+RUN dotnet publish "./FuzeAPI/FuzeAPI/FuzeAPI.csproj" -c release -o out
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0-focal
+FROM mcr.microsoft.com/dotnet/sdk:6.0
 WORKDIR /app
-COPY --from=build /app ./
-
-EXPOSE 5000
+COPY --from=build /app/out .
 
 ENTRYPOINT ["dotnet", "FuzeAPI.dll"]
