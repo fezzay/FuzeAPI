@@ -29,7 +29,7 @@ namespace Fuze.Kube.Adapter
             {
                 Date = DateTime.Now.AddDays(1),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = "hi"
+                Summary = list.Items.First().Metadata.Name
             };
         }
     }
