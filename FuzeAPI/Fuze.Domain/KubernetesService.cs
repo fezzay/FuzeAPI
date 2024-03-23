@@ -6,6 +6,7 @@ namespace Fuze.Domain
     public class KubernetesService : IKubernetesService
     {
         private IKubeRepository _kubeRepository;
+
         public KubernetesService(IKubeRepository kubeRepository) 
         {
             _kubeRepository = kubeRepository;

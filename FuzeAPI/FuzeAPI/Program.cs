@@ -1,8 +1,10 @@
 using Fuze.Domain;
-using Fuze.Domain.Interfaces;
 using Fuze.Kube.Adapter;
+using Fuze.Kube.Adapter.ConfigMap;
 
 var builder = WebApplication.CreateBuilder(args);
+
+IConfigurationRoot kubeConfig = builder.Configuration;
 
 // Add services to the container.
 
@@ -11,7 +13,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IKubernetesService, KubernetesService>();
-builder.Services.AddSingleton<IKubeRepository, KubeRepository>();
+
+builder.Services.Configure<KubeHost>(kubeConfig.GetSection("KubeHost"));
+
+builder.Services.AddKube();
 
 var app = builder.Build();
 

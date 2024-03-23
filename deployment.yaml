@@ -30,3 +30,22 @@ spec:
         env:
             - name: ASPNETCORE_URLS
               value: http://+:80
+      - name: sidecar
+        image: fezzzy/fuze-service-sidecar:latest
+        ports:
+        - containerPort: 8081
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: fuze-rbac
+subjects:
+  - kind: ServiceAccount
+    # Reference to upper's `metadata.name`
+    name: fuzeapi
+    # Reference to upper's `metadata.namespace`
+    namespace: fuze
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io

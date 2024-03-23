@@ -1,6 +1,8 @@
 ﻿using Fuze.Domain.Interfaces;
+using Fuze.Kube.Adapter.ConfigMap;
 using FuzeAPI.Models;
 using k8s;
+using Microsoft.Extensions.Options;
 
 namespace Fuze.Kube.Adapter
 {
@@ -8,9 +10,11 @@ namespace Fuze.Kube.Adapter
     {
         private KubernetesClientConfiguration _kubeClientConfig;
         private Kubernetes _kube;
-        public KubeRepository()
+        private readonly IOptions<KubeHost> _kubeHostSettings;
+        public KubeRepository(IOptions<KubeHost> kubeHostSettings)
         {
-            _kubeClientConfig = KubernetesClientConfiguration.BuildConfigFromConfigFile();
+            _kubeHostSettings = kubeHostSettings;
+            _kubeClientConfig = new KubernetesClientConfiguration { Host = $"http://{_kubeHostSettings.Value.IP}:{_kubeHostSettings.Value.Port}"};
             _kube = new Kubernetes(_kubeClientConfig);
         }
 

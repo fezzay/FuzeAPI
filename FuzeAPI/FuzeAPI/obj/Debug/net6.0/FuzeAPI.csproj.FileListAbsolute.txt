@@ -44,3 +44,7 @@ F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\YamlDotNet.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+F:\FuzeAPI\FuzeAPI\FuzeAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
