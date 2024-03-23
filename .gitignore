@@ -1,2 +1,5 @@
 FuzeAPI/.vs/*
 *.suo
+*env.yaml
+*.cache
+*.editorconfig
