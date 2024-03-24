@@ -29,4 +29,6 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 
+app.UseCors(options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 app.Run();

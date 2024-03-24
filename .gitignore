@@ -3,3 +3,5 @@ FuzeAPI/.vs/*
 *env.yaml
 *.cache
 *.editorconfig
+*.dll
+*.pdb
