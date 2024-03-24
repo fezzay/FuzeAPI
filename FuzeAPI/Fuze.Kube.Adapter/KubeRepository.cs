@@ -18,10 +18,10 @@ namespace Fuze.Kube.Adapter
             _kube = new Kubernetes(_kubeClientConfig);
         }
 
-        public List<Pod> GetAllPods()
+        public async Task<List<Pod>> GetAllPodsAsync()
         {
             List<Pod> allPods = new List<Pod>();
-            var pods = _kube.CoreV1.ListPodForAllNamespaces();
+            var pods = await _kube.CoreV1.ListPodForAllNamespacesAsync();
 
             foreach (var pod in pods.Items)
             {
