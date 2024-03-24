@@ -1,4 +1,5 @@
 ﻿using Fuze.Domain.Interfaces;
+using Fuze.Domain.Models;
 using FuzeAPI.Models;
 
 namespace Fuze.Domain
@@ -15,6 +16,11 @@ namespace Fuze.Domain
         public async Task<List<Pod>> GetAllPodsAsync()
         {
             return await _kubeRepository.GetAllPodsAsync();
+        }
+
+        public async Task<List<Deployment>> GetAllDeploymentsAsync()
+        {
+            return await _kubeRepository.GetAllDeploymentsAsync();
         }
     }
 }

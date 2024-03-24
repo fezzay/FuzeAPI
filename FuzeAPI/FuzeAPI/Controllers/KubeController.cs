@@ -28,5 +28,12 @@ namespace FuzeAPI.Controllers
         {
             return Ok(await _kubernetesService.GetAllPodsAsync());
         }
+
+        [HttpGet]
+        [Route("Deployments")]
+        public async Task<IActionResult> GetAllDeployments()
+        {
+            return Ok(await _kubernetesService.GetAllDeploymentsAsync());
+        }
     }
 }

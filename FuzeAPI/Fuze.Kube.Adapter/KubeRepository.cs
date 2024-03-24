@@ -1,4 +1,5 @@
 ﻿using Fuze.Domain.Interfaces;
+using Fuze.Domain.Models;
 using Fuze.Kube.Adapter.ConfigMap;
 using FuzeAPI.Models;
 using k8s;
@@ -21,7 +22,7 @@ namespace Fuze.Kube.Adapter
 
         public async Task<List<Pod>> GetAllPodsAsync()
         {
-            List<Pod> allPods = new List<Pod>();
+            List<Pod> allPods = new();
             var pods = await _kube.CoreV1.ListPodForAllNamespacesAsync();
             foreach (var pod in pods.Items)
             {
@@ -37,6 +38,24 @@ namespace Fuze.Kube.Adapter
             }
 
             return allPods;
+        }
+
+        public async Task<List<Deployment>> GetAllDeploymentsAsync()
+        {
+            List<Deployment> allDeployments = new();
+            var deployments = await _kube.ListDeploymentForAllNamespacesAsync();
+            foreach (var deployment in deployments.Items)
+            {
+                Deployment newDeployment = new()
+                {
+                    Name = deployment.Metadata.Name,
+                    Namespace = deployment.Metadata.NamespaceProperty,
+                    Selectors = deployment.Labels().Values.ToList()
+                };
+
+                allDeployments.Add(newDeployment);
+            }
+            return allDeployments;
         }
     }
 }
