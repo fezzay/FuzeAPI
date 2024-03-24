@@ -23,9 +23,9 @@ namespace FuzeAPI.Controllers
         }
 
         [HttpGet(Name = "GetAllNamespaces")]
-        public Pods GetAllNamespaces()
+        public IActionResult GetAllNamespaces()
         {
-            return _kubernetesService.GetAllPods();
+            return Ok(_kubernetesService.GetAllPods());
         }
     }
 }

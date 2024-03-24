@@ -18,19 +18,24 @@ namespace Fuze.Kube.Adapter
             _kube = new Kubernetes(_kubeClientConfig);
         }
 
-        public Pods GetAllPods()
+        public List<Pod> GetAllPods()
         {
-            var list = _kube.CoreV1.ListNamespacedPod("default");
-            foreach (var item in list.Items)
+            List<Pod> allPods = new List<Pod>();
+            var pods = _kube.CoreV1.ListPodForAllNamespaces();
+
+            foreach (var pod in pods.Items)
             {
-                Console.WriteLine(item.Metadata.Name);
+                Pod newPod = new()
+                {
+                    Name = pod.Metadata.Name,
+                    Namespace = pod.Metadata.NamespaceProperty,
+                    Status = pod.Status.Phase
+                };
+
+                allPods.Add(newPod);
             }
-            return new Pods()
-            {
-                Date = DateTime.Now.AddDays(1),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = list.Items.First().Metadata.Name
-            };
+
+            return allPods;
         }
     }
 }

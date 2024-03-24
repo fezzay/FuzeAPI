@@ -12,7 +12,7 @@ namespace Fuze.Domain
             _kubeRepository = kubeRepository;
         }
 
-        public Pods GetAllPods()
+        public List<Pod> GetAllPods()
         {
             return _kubeRepository.GetAllPods();
         }

@@ -4,6 +4,6 @@ namespace Fuze.Domain.Interfaces
 {
     public interface IKubeRepository
     {
-        public Pods GetAllPods();
+        public List<Pod> GetAllPods();
     }
 }

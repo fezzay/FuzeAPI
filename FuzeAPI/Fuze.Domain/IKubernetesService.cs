@@ -4,6 +4,6 @@ namespace Fuze.Domain
 {
     public interface IKubernetesService
     {
-        public Pods GetAllPods();
+        public List<Pod> GetAllPods();
     }
 }
