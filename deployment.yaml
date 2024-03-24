@@ -23,3 +23,7 @@ spec:
         env:
             - name: ASPNETCORE_URLS
               value: http://+:80
+            - name: KubeHost__IP
+              value: 192.168.1.55
+            - name: KubeHost__Port
+              value: 8001
