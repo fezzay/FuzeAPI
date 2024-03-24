@@ -5,6 +5,6 @@ namespace FuzeAPI.Models
         public string Name { get; set; } = "";
         public string Namespace { get; set; } = "default";
         public string Status { get; set; } = "NOT FOUND";
-        public List<string> Selector { get; set; } = new();
+        public List<string> Selectors { get; set; } = new();
     }
 }

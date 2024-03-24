@@ -23,16 +23,14 @@ namespace Fuze.Kube.Adapter
         {
             List<Pod> allPods = new List<Pod>();
             var pods = await _kube.CoreV1.ListPodForAllNamespacesAsync();
-            var bob = _kube.ListDeploymentForAllNamespaces();
             foreach (var pod in pods.Items)
             {
-                var steve = pod.Labels().Values;
                 Pod newPod = new()
                 {
                     Name = pod.Metadata.Name,
                     Namespace = pod.Metadata.NamespaceProperty,
                     Status = pod.Status.Phase,
-                    Selector = pod.Labels().Values.ToList()
+                    Selectors = pod.Labels().Values.ToList()
                 };
 
                 allPods.Add(newPod);
