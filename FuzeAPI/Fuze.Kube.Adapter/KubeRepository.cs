@@ -28,6 +28,7 @@ namespace Fuze.Kube.Adapter
             {
                 Pod newPod = new()
                 {
+                    Id = pod.Metadata.Uid,
                     Name = pod.Metadata.Name,
                     Namespace = pod.Metadata.NamespaceProperty,
                     Status = pod.Status.Phase,
@@ -48,6 +49,7 @@ namespace Fuze.Kube.Adapter
             {
                 Deployment newDeployment = new()
                 {
+                    Id = deployment.Metadata.Uid,
                     Name = deployment.Metadata.Name,
                     Namespace = deployment.Metadata.NamespaceProperty,
                     Selectors = deployment.Labels().Values.ToList()
