@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fuzeapi
+  labels:
+    app: fuzeapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fuzeapi
+  template:
+    metadata:
+      labels:
+        app: fuzeapi
+    spec:
+      containers:
+      - name: fuzeapi
+        image: fezzzy/fuze-service:v1.0
+        ports:
+        - containerPort: 80
+          name: http-fuze-api
+        env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
+            - name: KubeHost__IP
+              value: 192.168.1.55
+            - name: KubeHost__Port
+              value: 8001

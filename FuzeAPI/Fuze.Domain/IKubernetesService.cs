@@ -1,9 +1,11 @@
-﻿using FuzeAPI.Models;
+﻿using Fuze.Domain.Models;
+using FuzeAPI.Models;
 
 namespace Fuze.Domain
 {
     public interface IKubernetesService
     {
-        public Pods GetAllPods();
+        public Task<List<Pod>> GetAllPodsAsync();
+        public Task<List<Deployment>> GetAllDeploymentsAsync();
     }
 }

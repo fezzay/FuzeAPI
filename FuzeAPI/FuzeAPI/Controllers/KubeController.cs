@@ -22,10 +22,18 @@ namespace FuzeAPI.Controllers
             _kubernetesService = kubeService;
         }
 
-        [HttpGet(Name = "GetAllNamespaces")]
-        public Pods GetAllNamespaces()
+        [HttpGet]
+        [Route("Pods")]
+        public async Task<IActionResult> GetAllPods()
         {
-            return _kubernetesService.GetAllPods();
+            return Ok(await _kubernetesService.GetAllPodsAsync());
+        }
+
+        [HttpGet]
+        [Route("Deployments")]
+        public async Task<IActionResult> GetAllDeployments()
+        {
+            return Ok(await _kubernetesService.GetAllDeploymentsAsync());
         }
     }
 }
